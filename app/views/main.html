@@ -1,23 +1,60 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<header class="header col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <!--<ul id="header-nav" class="nav navbar-nav navbar-right">-->
+    <!--<li><a ng-href="#">Accueil</a></li>-->
+    <!--<li><a ng-href="#">Blog</a></li>-->
+    <!--&lt;!&ndash;<li><a ng-href="#/company">Compagnie</a></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li><a ng-href="#/product">Produits</a></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li><a ng-href="#/team">L'équipe</a></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li><a ng-href="#/news">Nouvelles</a></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li><a ng-href="#/partners">Partenaires</a></li>&ndash;&gt;-->
+    <!--<li><a ng-href="#/contact">Contact</a></li>-->
+  <!--</ul>-->
+  <h3 class="text-muted">Grantuned</h3>
+</header>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<section id="banner">
+  <div class="content">
+    <header class="text-center">
+      <h2>Boudin sausage biltong salami</h2>
+      <p>Spare ribs meatball andouille shankle tail jerky pork loin tongue.<br />
+        Spare ribs meatloaf shoulder beef, jowl kielbasa jerky ham doner.</p>
+    </header>
+  </div>
+</section>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+<section id="one">
+  <header class="text-center">
+    <h2>Bresaola meatball doner</h2>
+    <p>Bacon ipsum dolor amet pork</p>
+  </header>
+</section>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+<section ng-repeat="section in sections" id={{section.id}} class="front-img">
+  <span class="image fit main"><img src={{section.imagePath}} alt="" /></span>
+  <div class="content col-xs-6 col-sm-6 col-md-6 col-lg-6 {{section.float}}">
+    <header>
+      <h2 class={{section.textAlign}}>{{section.title}}</h2>
+      <p class={{section.textAlign}}>{{section.content}}</p>
+    </header>
+  </div>
+  <!--<a href="#two" class="goto-next scrolly">Next</a>-->
+</section>
+
+<section id="five">
+  <header class="text-center">
+    <h2>Shank bacon ball tip shankle</h2>
+    <p>Strip steak prosciutto corned beef jowl tongue fatback picanha filet mignon</p>
+  </header>
+</section>
+
+<script>
+  $(window).scroll(function() {
+    console.log($(this).scrollTop());
+    if ($(this).scrollTop() > 428){
+      $('.header').addClass("sticky");
+    }
+    else{
+      $('.header').removeClass("sticky");
+    }
+  });
+</script>
