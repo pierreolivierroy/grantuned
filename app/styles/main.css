@@ -29,14 +29,68 @@ hr {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.0);
+  /*background-color: rgba(255, 255, 255, 0.0);*/
+  /*background: rgba(255, 255, 255, 0.0);*/
   position: fixed;
   top: 0;
   width: 100%;
-  font-size: 24px;
-  line-height: 48px;
-  height: 48px;
+  /*font-size: 24px;*/
+  /*line-height: 48px;*/
+  /*height: 48px;*/
 }
+
+.header .navbar {
+  margin-bottom: 0;
+}
+
+.header .navbar .navbar-header .navbar-brand {
+  margin-left: 15px;
+}
+
+.container-fluid { padding-left: 0; padding-right: 0; }
+
+.header .navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+.header .navbar-default {
+  background-color: rgba(255, 255, 255, 0.0);
+  border: none;
+}
+
+.header .navbar-toggle { border: none; }
+
+.header .navbar-default .navbar-nav > li > a {
+  color: #FFF;
+  /*padding-bottom: 0;*/
+  height: 100%;
+}
+
+.header .navbar-default .navbar-nav > li > a:hover {
+  color: #a4cd33;
+}
+
+.header .navbar-default .navbar-nav {
+  margin-right: 5px;
+}
+
+.dropdown > a > i {
+  /*margin-top: -2px;*/
+}
+
+/*.header .collapse {*/
+  /*background-color: #FFF;*/
+/*}*/
+
+/*.header .collapse .navbar-nav > li > a {*/
+  /*color: #777;*/
+/*}*/
+
+/*.header .collapse .navbar-nav > li > a:hover {*/
+  /*color: #000;*/
+/*}*/
+
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -52,7 +106,7 @@ hr {
   /*text-align: left;*/
   /*padding-left: 20px;*/
   position: fixed;
-  width: 100%;
+  /*width: 100%;*/
   background: #272833;
 }
 .header.sticky h3 {
@@ -173,7 +227,7 @@ hr {
 #one {
   padding-left: 2em;
   padding-right: 2em;
-  padding: 4.5em 0 4.5em 0;
+  padding: 8.5em 0 8.5em 0;
   z-index: 4;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
@@ -205,7 +259,7 @@ hr {
 #five {
   padding-left: 2em;
   padding-right: 2em;
-  padding: 4.5em 0 4.5em 0;
+  padding: 8.5em 0 8.5em 0;
   background: #a4cd33;
   z-index: 1;
 
@@ -482,12 +536,27 @@ hr {
     padding-left: 0;
     padding-right: 0;
   }
-  /* Space out the masthead */
-  .header {
-    /*margin-bottom: 30px;*/
-  }
+
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .navbar-header {
+    background-color: #272833;
+  }
+
+  .header .collapse {
+    background-color: #FFF;
+  }
+
+  .header .navbar-default .navbar-nav > li > a {
+    color: #777;
+  }
+
+  .header .navbar-default .navbar-nav > li > a:hover {
+    color: #000;
   }
 }

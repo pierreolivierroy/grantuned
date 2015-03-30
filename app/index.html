@@ -26,22 +26,58 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <div ng-view=""></div>
+    <header class="header" ng-class="{'sticky': isMainPage('/')}">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Grantuned</a>
+          </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <ul class="icons">
-      <li><a href="#" class="icon alt fa-twitter fa-2x"><span class="label">Twitter</span></a></li>
-      <li><a href="#" class="icon alt fa-facebook fa-2x"><span class="label">Facebook</span></a></li>
-      <li><a href="#" class="icon alt fa-linkedin fa-2x"><span class="label">LinkedIn</span></a></li>
-      <li><a href="#" class="icon alt fa-instagram fa-2x"><span class="label">Instagram</span></a></li>
-      <li><a href="#" class="icon alt fa-github fa-2x"><span class="label">GitHub</span></a></li>
-      <li><a href="#" class="icon alt fa-envelope fa-2x"><span class="label">Email</span></a></li>
-    </ul>
-    <ul class="copyright">
-      <li>&copy; Grantuned. Tous droits réservés.</li><li>Textes: <a href="http://baconipsum.com/">Bacon Ipsum</a></li>
-    </ul>
-  </footer>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#/product">Nos produits</a></li>
+              <li><a href="#/company">La compagnie</a></li>
+              <li><a href="#">Blog</a></li>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-plus-square-o fa-2x"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#/team">Notre équipe</a></li>
+                  <li><a href="#/news">Les nouvelles</a></li>
+                  <li><a href="#/contact">Contact</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Nos partenaires</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <div ng-view=""></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="icons">
+        <li><a href="#" class="icon alt fa-twitter fa-2x"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon alt fa-facebook fa-2x"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon alt fa-linkedin fa-2x"><span class="label">LinkedIn</span></a></li>
+        <li><a href="#" class="icon alt fa-instagram fa-2x"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon alt fa-github fa-2x"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon alt fa-envelope fa-2x"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Grantuned. Tous droits réservés.</li><li>Textes: <a href="http://baconipsum.com/">Bacon Ipsum</a></li>
+      </ul>
+    </footer>
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -73,6 +109,7 @@
         <script src="scripts/controllers/team.js"></script>
         <script src="scripts/controllers/partners.js"></script>
         <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/services/headerservice.js"></script>
         <!-- endbuild -->
 </body>
 </html>

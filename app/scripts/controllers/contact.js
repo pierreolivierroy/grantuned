@@ -8,7 +8,7 @@
  * Controller of the grantunedApp
  */
 angular.module('grantunedApp')
-  .controller('ContactCtrl', function ($scope) {
+  .controller('ContactCtrl', function ($scope, headerService) {
     $scope.content = {
       title: "Contactez-nous",
       subtitle: "Vous désirez faire affaire avec nous ou bien tout simplement discuter avec nous, contactez-nous!",

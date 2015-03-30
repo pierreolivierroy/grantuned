@@ -8,7 +8,7 @@
  * Controller of the grantunedApp
  */
 angular.module('grantunedApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, headerService) {
 
     $scope.sections = [
       {
