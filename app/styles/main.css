@@ -4,10 +4,36 @@ body {
   /*padding-bottom: 20px;*/
 }
 
+.ng-scope {
+  height: 100%;
+}
+
+.angular-google-map-container {
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 400px;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
+}
+
 #container {
   background: #FFF;
-  padding: 15px;
+  /*padding: 60px 20px 20px 20px;*/
+  padding-top: 100px;
   color: #333;
+}
+
+#container section {
+  margin-bottom: 25px;
+}
+
+#container section h1 {
+  margin-top: 0;
+}
+
+#container section .list-group {
+  margin-top: 15px;
 }
 
 hr {
@@ -17,7 +43,7 @@ hr {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
-.footer {
+#footer {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -147,7 +173,7 @@ hr {
 
 #banner {
   background-attachment: scroll, fixed;
-  background: linear-gradient(rgba(39, 40, 51, 0.35), rgba(39, 40, 51, 0.35)), url("../images/photo-1413920346627-a4389f0abd61.jpeg");
+  background: linear-gradient(rgba(39, 40, 51, 0.35), rgba(39, 40, 51, 0.35)), url("../images/photo-1.jpeg");
   background-position: top left, center center;
   background-size: cover;
   background-repeat: repeat, no-repeat;
@@ -524,6 +550,22 @@ hr {
   display: inline-block;
   padding: 0 0.5em;
 }
+
+#footer .icons > li > a > i {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .icons > li > a > i:hover {
+  color: #a4cd33;
+}
+
+/*.fa-twitter:hover {*/
+  /*color: #a4cd33;*/
+/*}*/
+
+/*#footer .icons:hover {*/
+  /*color: #a4cd33;*/
+/*}*/
 
 #footer .icons li .label { display: none; }
 

@@ -13,7 +13,7 @@ angular.module('grantunedApp')
     $scope.sections = [
       {
         id: "two",
-        imagePath: "images/photo-1423439793616-f2aa4356b37e.jpeg",
+        imagePath: "images/photo-2.jpeg",
         float: "vertical-align",
         textAlign: "text-left",
         title: "Short ribs sirloin venison spare ribs pork cupim",
@@ -21,7 +21,7 @@ angular.module('grantunedApp')
       },
       {
         id: "three",
-        imagePath: "images/photo-1415871989540-61fe9268d3c8.jpeg",
+        imagePath: "images/photo-3.jpeg",
         float: "vertical-align pull-right",
         textAlign: "text-right",
         title: "Short ribs sirloin venison spare ribs pork cupim",

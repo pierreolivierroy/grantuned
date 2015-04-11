@@ -20,6 +20,11 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6z1vC7jEh0j5EhnL8yi2Z7U130Tz2lF4"></script>-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>-->
+    <!--<script type="text/javascript"-->
+            <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTRdNTKWzPRVc7B66bMu2BdJDIFsYBUP8">-->
+    <!--</script>-->
   </head>
   <body ng-app="grantunedApp">
     <!--[if lt IE 7]>
@@ -51,9 +56,9 @@
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#/team">Notre équipe</a></li>
                   <li><a href="#/news">Les nouvelles</a></li>
+                  <li><a href="#/partners">Nos partenaires</a></li>
+                  <!--<li class="divider"></li>-->
                   <li><a href="#/contact">Contact</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Nos partenaires</a></li>
                 </ul>
               </li>
             </ul>
@@ -62,22 +67,38 @@
       </nav>
     </header>
 
-    <div ng-view=""></div>
+    <div ng-view="view-animate"></div>
 
     <!-- Footer -->
     <footer id="footer">
       <ul class="icons">
-        <li><a href="#" class="icon alt fa-twitter fa-2x"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon alt fa-facebook fa-2x"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon alt fa-linkedin fa-2x"><span class="label">LinkedIn</span></a></li>
-        <li><a href="#" class="icon alt fa-instagram fa-2x"><span class="label">Instagram</span></a></li>
-        <li><a href="#" class="icon alt fa-github fa-2x"><span class="label">GitHub</span></a></li>
-        <li><a href="#" class="icon alt fa-envelope fa-2x"><span class="label">Email</span></a></li>
+        <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
       </ul>
       <ul class="copyright">
         <li>&copy; Grantuned. Tous droits réservés.</li><li>Textes: <a href="http://baconipsum.com/">Bacon Ipsum</a></li>
       </ul>
     </footer>
+
+    <script>
+      $(window).scroll(function() {
+        console.log(window.location.hash);
+        if(window.location.hash === "#/") {
+          if ($(this).scrollTop() > 428) {
+            $('.header').addClass("sticky");
+          }
+          else {
+            $('.header').removeClass("sticky");
+          }
+        }
+      });
+    </script>
+
+
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -97,20 +118,8 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-
-    <script>
-      $(window).scroll(function() {
-        console.log(window.location.hash);
-        if(window.location.hash === "#/") {
-          if ($(this).scrollTop() > 428) {
-            $('.header').addClass("sticky");
-          }
-          else {
-            $('.header').removeClass("sticky");
-          }
-        }
-      });
-    </script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
