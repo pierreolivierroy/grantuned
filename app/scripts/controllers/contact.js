@@ -41,3 +41,4 @@ angular.module('grantunedApp')
       $scope.map = { center: { latitude: 45.496459, longitude: -73.561677 }, zoom: 16 };
     });
   });
+

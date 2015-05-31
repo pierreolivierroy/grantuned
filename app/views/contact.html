@@ -1,30 +1,57 @@
-<div id="container" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-  <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
+<div>
+  <div class="row cont" style="margin-top: 100px;">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <h1>{{content.title}}</h1>
       <p>{{content.subtitle}}</p>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <div class="list-group">
-        <a href="#" class="list-group-item disabled">{{content.infoTitle}}</a>
-        <a href="#" class="list-group-item">{{content.email}}</a>
-        <a href="#" class="list-group-item">{{content.address}}</a>
-        <a href="#" class="list-group-item">{{content.city}}, {{content.province}}</a>
-        <a href="#" class="list-group-item">{{content.postalCode}}</a>
-        <a href="#" class="list-group-item">{{content.phone}}</a>
-      </div>
-    </div>
-  </section>
+      <ul class="list-group">
+        <li class="list-group-item disabled">{{content.infoTitle}}</li>
+        <li class="list-group-item">{{content.email}}</li>
+        <li class="list-group-item">{{content.address}}</li>
+        <li class="list-group-item">{{content.city}}, {{content.province}}</li>
+        <li class="list-group-item">{{content.postalCode}}</li>
+        <li class="list-group-item">{{content.phone}}</li>
+      </ul>
+  </div>
 
   <hr class="divider">
 
-  <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="row count col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <ui-gmap-google-map center='map.center' zoom='map.zoom'>
       <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id"></ui-gmap-marker>
     </ui-gmap-google-map>
-  </section>
+  </div>
+
 </div>
+
+<!--<div id="container" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+
+  <!--<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+
+    <!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">-->
+      <!--<h1>{{content.title}}</h1>-->
+      <!--<p>{{content.subtitle}}</p>-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">-->
+      <!--<div class="list-group">-->
+        <!--<a href="#" class="list-group-item disabled">{{content.infoTitle}}</a>-->
+        <!--<a href="#" class="list-group-item">{{content.email}}</a>-->
+        <!--<a href="#" class="list-group-item">{{content.address}}</a>-->
+        <!--<a href="#" class="list-group-item">{{content.city}}, {{content.province}}</a>-->
+        <!--<a href="#" class="list-group-item">{{content.postalCode}}</a>-->
+        <!--<a href="#" class="list-group-item">{{content.phone}}</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</section>-->
+
+  <!--<hr class="divider">-->
+
+  <!--<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+    <!--<ui-gmap-google-map center='map.center' zoom='map.zoom'>-->
+      <!--<ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id"></ui-gmap-marker>-->
+    <!--</ui-gmap-google-map>-->
+  <!--</section>-->
+<!--</div>-->
 
 

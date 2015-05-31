@@ -18,42 +18,25 @@ angular
     'ngTouch',
     'uiGmapgoogle-maps'
   ])
-  .config(function ($routeProvider, uiGmapGoogleMapApiProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/company', {
-        templateUrl: 'views/company.html',
-        controller: 'CompanyCtrl'
-      })
-      .when('/product', {
-        templateUrl: 'views/product.html',
-        controller: 'ProductCtrl'
-      })
-      .when('/news', {
-        templateUrl: 'views/news.html',
-        controller: 'NewsCtrl'
-      })
-      .when('/team', {
-        templateUrl: 'views/team.html',
-        controller: 'TeamCtrl'
-      })
-      .when('/partners', {
-        templateUrl: 'views/partners.html',
-        controller: 'PartnersCtrl'
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
+      .when('/product', {
+        templateUrl: 'views/product.html',
+        controller: 'ProductCtrl'
+      })
       .otherwise({
         redirectTo: '/'
-      });
-      uiGmapGoogleMapApiProvider.configure({
-        key: 'AIzaSyBTRdNTKWzPRVc7B66bMu2BdJDIFsYBUP8',
-        v: '3.17',
-        libraries: 'weather,geometry,visualization'
       });
   });

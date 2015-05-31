@@ -1,4 +1,4 @@
-// Generated on 2015-02-26 using generator-angular 0.9.8
+// Generated on 2015-05-31 using generator-angular 0.9.8
 'use strict';
 
 // # Globbing
@@ -395,7 +395,7 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    //'filerev',
+    'filerev',
     'usemin',
     'htmlmin'
   ]);

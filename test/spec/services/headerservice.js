@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: headerService', function () {
+describe('Service: headerservice', function () {
 
   // load the service's module
   beforeEach(module('grantunedApp'));
 
   // instantiate service
-  var headerService;
-  beforeEach(inject(function (_headerService_) {
-    headerService = _headerService_;
+  var headerservice;
+  beforeEach(inject(function (_headerservice_) {
+    headerservice = _headerservice_;
   }));
 
   it('should do something', function () {
-    expect(!!headerService).toBe(true);
+    expect(!!headerservice).toBe(true);
   });
 
 });

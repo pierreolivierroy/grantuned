@@ -2,35 +2,27 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Grantuned</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <!--<link rel="stylesheet" href="styles/style.css">-->
     <!-- endbuild -->
-
-    <!-- import Google font -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6z1vC7jEh0j5EhnL8yi2Z7U130Tz2lF4"></script>-->
-    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>-->
-    <!--<script type="text/javascript"-->
-            <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTRdNTKWzPRVc7B66bMu2BdJDIFsYBUP8">-->
-    <!--</script>-->
   </head>
   <body ng-app="grantunedApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <!-- Add your site or application content here -->
     <header class="header" ng-class="{'sticky': isMainPage('/')}">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -48,26 +40,18 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#/product">Nos produits</a></li>
-              <li><a href="#/company">La compagnie</a></li>
-              <li><a href="#">Blog</a></li>
-              <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-plus-square-o fa-2x"></i></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#/team">Notre équipe</a></li>
-                  <li><a href="#/news">Les nouvelles</a></li>
-                  <li><a href="#/partners">Nos partenaires</a></li>
-                  <!--<li class="divider"></li>-->
-                  <li><a href="#/contact">Contact</a></li>
-                </ul>
-              </li>
+              <li><a href="#/product">Produit</a></li>
+              <li><a href="#/company">À propos</a></li>
+              <li><a href="#/partners">Nos partenaires</a></li>
+              <li><a href="#/contact">Contact</a></li>
+              <li><a href="#/">EN</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
     </header>
 
-    <div ng-view="view-animate"></div>
+    <div ng-view=""></div>
 
     <!-- Footer -->
     <footer id="footer">
@@ -83,22 +67,6 @@
         <li>&copy; Grantuned. Tous droits réservés.</li><li>Textes: <a href="http://baconipsum.com/">Bacon Ipsum</a></li>
       </ul>
     </footer>
-
-    <script>
-      $(window).scroll(function() {
-        console.log(window.location.hash);
-        if(window.location.hash === "#/") {
-          if ($(this).scrollTop() > 428) {
-            $('.header').addClass("sticky");
-          }
-          else {
-            $('.header').removeClass("sticky");
-          }
-        }
-      });
-    </script>
-
-
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -118,21 +86,34 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
-    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/company.js"></script>
-        <script src="scripts/controllers/product.js"></script>
-        <script src="scripts/controllers/news.js"></script>
-        <script src="scripts/controllers/team.js"></script>
-        <script src="scripts/controllers/partners.js"></script>
-        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/about.js"></script>
         <script src="scripts/services/headerservice.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/product.js"></script>
         <!-- endbuild -->
+
+    <script>
+      $(window).scroll(function() {
+        console.log(window.location.hash);
+        if(window.location.hash === "#/") {
+          if ($(this).scrollTop() > 428) {
+            $('.header').addClass("sticky");
+          }
+          else {
+            $('.header').removeClass("sticky");
+          }
+        }
+      });
+    </script>
 </body>
 </html>

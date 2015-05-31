@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc service
- * @name grantunedApp.headerService
+ * @name grantunedApp.headerservice
  * @description
- * # headerService
+ * # headerservice
  * Service in the grantunedApp.
  */
 angular.module('grantunedApp')
