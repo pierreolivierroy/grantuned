@@ -10,8 +10,8 @@
 angular.module('grantunedApp')
   .controller('ProductCtrl', function ($scope, headerService) {
     $scope.content = {
-      title: "ecotuned",
-      subtitle: "Bacon ipsum dolor amet boudin porchetta turducken biltong andouille frankfurter cow ball tip t-bone. Bacon kevin andouille capicola drumstick leberkas prosciutto tri-tip fatback cow. Bacon short loin picanha rump pig shoulder."
+      title: 'ecotuned',
+      subtitle: 'Bacon ipsum dolor amet boudin porchetta turducken biltong andouille frankfurter cow ball tip t-bone. Bacon kevin andouille capicola drumstick leberkas prosciutto tri-tip fatback cow. Bacon short loin picanha rump pig shoulder.'
     };
 
     $scope.specs = [
