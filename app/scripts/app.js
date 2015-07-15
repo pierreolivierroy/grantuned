@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
+    'highcharts-ng'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -35,6 +36,14 @@ angular
       .when('/product', {
         templateUrl: 'views/product.html',
         controller: 'ProductCtrl'
+      })
+      .when('/faq', {
+        templateUrl: 'views/faq.html',
+        controller: 'FaqCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'

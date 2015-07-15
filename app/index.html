@@ -39,10 +39,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#/product">Produit</a></li>
-              <li><a href="#/company">À propos</a></li>
-              <li><a href="#/partners">Nos partenaires</a></li>
-              <li><a href="#/contact">Contact</a></li>
+              <li><a href="#/">ACCUEIL</a></li>
+              <li><a href="#/product">PRODUIT</a></li>
+              <li><a href="#/about">À PROPOS</a></li>
+              <li><a href="#/faq">FAQ</a></li>
+              <li><a href="#/contact">CONTACT</a></li>
               <li><a href="#/">EN</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -53,7 +54,7 @@
     <div ng-view=""></div>
 
     <!-- Footer -->
-    <footer id="footer">
+    <div id="footer">
       <ul class="icons">
         <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
         <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
@@ -65,7 +66,7 @@
       <ul class="copyright">
         <li>&copy; Grantuned. Tous droits réservés.</li><li>Textes: <a href="http://baconipsum.com/">Bacon Ipsum</a></li>
       </ul>
-    </footer>
+    </div>
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -87,6 +88,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
     <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -96,6 +98,8 @@
         <script src="scripts/services/headerservice.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/product.js"></script>
+        <script src="scripts/controllers/faq.js"></script>
+        <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
 
     <script>

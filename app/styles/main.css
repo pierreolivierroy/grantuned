@@ -18,22 +18,75 @@ body {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
 }
 
-#container {
-  background: #FFF;
+.container {
+  /*background: #FFF;*/
   /*padding: 60px 20px 20px 20px;*/
-  padding-top: 100px;
+  /*margin-top: 1em;*/
+  /*padding: 3em 6em 3em 6em;*/
+  /*padding-top: 100px;*/
+  /*margin: 6em 6em 3em 6em;*/
+  margin: 6em;
   color: #333;
 }
 
-#container section {
+.container > section > h3 {
+  margin-bottom: 2em;
+}
+
+.home-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+38,ffffff+60 */
+  /*background: #eeeeee; /!* Old browsers *!/*/
+  /*background: -moz-linear-gradient(-45deg,  #eeeeee 38%, #ffffff 60%); /!* FF3.6+ *!/*/
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(38%,#eeeeee), color-stop(60%,#ffffff)); /!* Chrome,Safari4+ *!/*/
+  /*background: -webkit-linear-gradient(-45deg,  #eeeeee 38%,#ffffff 60%); /!* Chrome10+,Safari5.1+ *!/*/
+  /*background: -o-linear-gradient(-45deg,  #eeeeee 38%,#ffffff 60%); /!* Opera 11.10+ *!/*/
+  /*background: -ms-linear-gradient(-45deg,  #eeeeee 38%,#ffffff 60%); /!* IE10+ *!/*/
+  /*background: linear-gradient(135deg,  #eeeeee 38%,#ffffff 60%); /!* W3C *!/*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 ); /!* IE6-9 fallback on horizontal gradient *!/*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9c667+0,f79621+100;Orange+3D+%234 */
+
+
+  /*background: #f9c667; /!* Old browsers *!/*/
+  /*background: -moz-linear-gradient(-45deg,  #f9c667 0%, #f79621 100%); /!* FF3.6+ *!/*/
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f9c667), color-stop(100%,#f79621)); /!* Chrome,Safari4+ *!/*/
+  /*background: -webkit-linear-gradient(-45deg,  #f9c667 0%,#f79621 100%); /!* Chrome10+,Safari5.1+ *!/*/
+  /*background: -o-linear-gradient(-45deg,  #f9c667 0%,#f79621 100%); /!* Opera 11.10+ *!/*/
+  /*background: -ms-linear-gradient(-45deg,  #f9c667 0%,#f79621 100%); /!* IE10+ *!/*/
+  /*background: linear-gradient(135deg,  #f9c667 0%,#f79621 100%); /!* W3C *!/*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=1 ); /!* IE6-9 fallback on horizontal gradient *!/*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0.16, #C7C7C7),
+    color-stop(1, #FFFFFF)
+  );
+  background-image: -o-linear-gradient(right bottom, #C7C7C7 16%, #FFFFFF 100%);
+  background-image: -moz-linear-gradient(right bottom, #C7C7C7 16%, #FFFFFF 100%);
+  background-image: -webkit-linear-gradient(right bottom, #C7C7C7 16%, #FFFFFF 100%);
+  background-image: -ms-linear-gradient(right bottom, #C7C7C7 16%, #FFFFFF 100%);
+  background-image: linear-gradient(to right bottom, #C7C7C7 16%, #FFFFFF 100%);
+  background-position: top left, center center;
+  background-size: cover;
+  background-repeat: repeat, no-repeat;
+}
+
+.container h1 {
+  margin: 1em 0 1em 0;
+}
+
+.container section {
   margin-bottom: 25px;
 }
 
-#container section h1 {
+.container section h1 {
   margin-top: 0;
 }
 
-#container section .list-group {
+.container section .list-group {
   margin-top: 15px;
 }
 
@@ -45,8 +98,8 @@ hr {
 .header,
 .marketing,
 #footer {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* Custom page header */
@@ -64,6 +117,8 @@ hr {
   /*font-size: 24px;*/
   /*line-height: 48px;*/
   /*height: 48px;*/
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header .navbar {
@@ -137,7 +192,8 @@ hr {
   /*padding-left: 20px;*/
   position: fixed;
   /*width: 100%;*/
-  background: #272833;
+  /*background: #272833;*/
+  background: #000000;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
@@ -153,11 +209,11 @@ hr {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    /*max-width: 730px;*/
   }
 }
 .container-narrow > hr {
-  margin: 30px 0;
+  /*margin: 30px 0;*/
 }
 
 /* Main marketing message and sign up button */
@@ -180,7 +236,7 @@ hr {
 
 #banner {
   background-attachment: scroll, fixed;
-  background: linear-gradient(rgba(39, 40, 51, 0.35), rgba(39, 40, 51, 0.35)), url("../images/photo-1.jpeg");
+  background: linear-gradient(rgba(39, 40, 51, 0.15), rgba(39, 40, 51, 0.15)), url("../images/product_image.png");
   background-position: top left, center center;
   background-size: cover;
   background-repeat: repeat, no-repeat;
@@ -189,7 +245,7 @@ hr {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
   min-height: 100vh;
   text-align: center;
-  z-index: 5;
+  /*margin-bottom: 1em;*/
 }
 
 #banner:before {
@@ -215,34 +271,35 @@ hr {
 /*width: 100%;*/
 /*}*/
 
-#banner .content {
+.content {
   display: inline-block;
   margin-right: 1%;
   max-width: 95%;
-  padding: 6em;
+  padding: 8.5em;
   position: relative;
   text-align: right;
   vertical-align: middle;
 }
 
-#banner .content header {
+.content header {
   display: inline-block;
   vertical-align: middle;
 }
 
-#banner .content header h2 {
-  font-size: 3.5em;
+.content header h2 {
+  font-size: 4.5em;
   margin: 0;
-  color: white;
+  color: dimgray;
 }
 
-#banner .content header p {
-  margin: 1em 0 0 0;
+.content header h3 {
+  /*margin: 1em 0 0 0;*/
+  font-size: 2.0em;
   top: 0;
-  color: white;
+  color: dimgray;
 }
 
-#banner .content .image {
+.content .image {
   /*border-radius: 100%;*/
   display: inline-block;
   height: 18em;
@@ -251,60 +308,99 @@ hr {
   width: 18em;
 }
 
-#banner .content .image img {
+.content .image img {
   /*border-radius: 100%;*/
   display: block;
   width: 100%;
 }
 
-#one {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding: 8.5em 0 8.5em 0;
-  z-index: 4;
+#innovation-section {
+  background: #ffffff;
+  /*padding: 50px 100px 50px 100px;*/
+  /*padding: 3em 6em 3em 6em;*/
+  min-height: 60vh;
+}
+
+#innovation-section h4 {
+  font-size: 2.0em;
+  color: dimgray;
+}
+
+#eco-container {
+  padding: 2em 0 2em 0;
+}
+
+#eco-container .img-responsive {
+  margin: 0 auto;
+}
+
+#product-tech {
+  padding: 2em 0 2em 0;
+}
+
+#product-tech .img-responsive {
+  margin: 0 auto;
+  /*width: 50%;*/
+  /*height: 50%;*/
+}
+
+#economy-chart {
+  margin: 0 auto;
+}
+
+#motor-img {
+  /*padding-left: 0 !important;*/
+  /*padding-right: 0 !important;*/
+  /*width: 100%;*/
+  /*-webkit-box-sizing: border-box;*/
+  /*-moz-box-sizing: border-box;*/
+  /*box-sizing: border-box;*/
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
-  /*background: #a4cd33;*/
 }
 
-#one h2 {
-  font-size: 2.85em;
-  line-height: 1.25em;
+.advantages-img {
+  width: 25%;
+  height: 25%;
+  margin: 0 auto;
+  margin-top: 2em;
 }
 
-#one p {
-  font-size: 1.5em;
-  line-height: 1.5em;
+#innovation-section p {
+  /*width: 80%;*/
 }
 
-#two {
-  z-index: 3;
-}
-
-#three {
-  z-index: 2;
-  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.35);
-}
-
-#five {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding: 8.5em 0 8.5em 0;
+#info-button {
   background: #a4cd33;
-  z-index: 1;
-
+  color: #ffffff;
+  border-color: #ABD635;
+  /*margin: 50px 0 50px 0;*/
+  /*margin-top: 3em;*/
+  /*margin-bottom: 1em;*/
 }
-#five h2 {
-  font-size: 2.85em;
-  line-height: 1.25em;
+
+#info-button:hover {
+  background: #ABD635;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-#five p {
-  font-size: 1.5em;
-  line-height: 1.5em;
+#questions {
+  /*margin-left: 100px;*/
+  /*margin-right: 100px;*/
+  padding-bottom: 3em;
+}
+
+.spec {
+  /*display: table;*/
+  /*margin: 0 auto;*/
+  /*float: left;*/
+}
+
+.spec > h5 {
+  font-weight: bold;
+  margin: 1.2em 0 1.2em 0;
 }
 
 /*.front-img:before {*/
@@ -385,39 +481,94 @@ hr {
   position: relative;
 }
 
-.front-img .content {
-  /*display: inline-block;*/
-  /*margin-right: 1%;*/
-  /*max-width: 95%;*/
-  /*padding: 6em;*/
-  /*position: absolute;*/
-  /*vertical-align: middle;*/
-  /*color: black;*/
+.rotate {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+#partners {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.partner-img {
+  /*width: 15%;*/
+  /*height: 15%;*/
+  width: 250px;
+  height: 250px;
+}
+
+/*.front-img .content {*/
+  /*/!*display: inline-block;*!/*/
+  /*/!*margin-right: 1%;*!/*/
+  /*/!*max-width: 95%;*!/*/
+  /*/!*padding: 6em;*!/*/
+  /*/!*position: absolute;*!/*/
+  /*/!*vertical-align: middle;*!/*/
+  /*/!*color: black;*!/*/
+  /*/!*z-index: 100;*!/*/
+  /*position: relative;*/
   /*z-index: 100;*/
+  /*min-height: 50vh;*/
+  /*background: rgba(39, 40, 51, 0.25);*/
+  /*-webkit-border-radius: 3px;*/
+  /*-moz-border-radius: 3px;*/
+  /*border-radius: 3px;*/
+  /*/!*display: table;*!/*/
+  /*/!*table-layout: fixed;*!/*/
+  /*top: 25vh;*/
+/*}*/
+
+/*.front-img .content header {*/
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+/*}*/
+
+/*.front-img .content header h2 {*/
+  /*font-size: 3.5em;*/
+  /*margin: 0;*/
+  /*color: white;*/
+/*}*/
+
+/*.front-img .content header p {*/
+  /*margin: 1em 0 0 0;*/
+  /*top: 0;*/
+  /*color: white;*/
+/*}*/
+
+.product-content {
   position: relative;
   z-index: 100;
-  min-height: 50vh;
-  background: rgba(39, 40, 51, 0.25);
+  min-height: 70vh;
+  background: rgba(255, 255, 255, 0.50);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  /*display: table;*/
-  /*table-layout: fixed;*/
-  top: 25vh;
+  margin-right: 6em;
 }
 
-.front-img .content header {
+.product-content header {
   display: inline-block;
   vertical-align: middle;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 1.5em 0 1.5em 0;
+  margin: 3.0em 0 3.0em 0;
 }
 
-.front-img .content header h2 {
-  font-size: 3.5em;
+.product-content header h2 {
+  font-size: 2.0em;
   margin: 0;
   color: white;
 }
 
-.front-img .content header p {
+.product-content p {
+  display: inline-block;
+  vertical-align: middle;
   margin: 1em 0 0 0;
   top: 0;
   color: white;
@@ -515,7 +666,8 @@ hr {
 }
 
 #footer {
-  background: #272833;
+  /*background: #272833;*/
+  background: #000000;
   padding: 6em 0;
   text-align: center;
 }
@@ -534,7 +686,8 @@ hr {
 }
 
 #footer .icons .icon.alt:before {
-  color: #272833 !important;
+  /*color: #272833 !important;*/
+  color: #000000 !important;
   text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -594,8 +747,8 @@ hr {
   .header,
   .marketing,
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
@@ -606,7 +759,8 @@ hr {
 
 @media (max-width: 768px) {
   .header .navbar-header {
-    background-color: #272833;
+    /*background-color: #272833;*/
+    background-color: #000000;
   }
 
   .header .collapse {

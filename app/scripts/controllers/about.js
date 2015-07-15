@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name grantunedApp.controller:MainCtrl
+ * @name grantunedApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the grantunedApp
  */
 angular.module('grantunedApp')
-  .controller('MainCtrl', function ($scope, headerService) {
+  .controller('AboutCtrl', function ($scope, headerService) {
 
   });
