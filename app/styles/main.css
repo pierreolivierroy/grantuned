@@ -4,6 +4,35 @@ body {
   /*padding-bottom: 20px;*/
 }
 
+a { color: inherit; }
+
+@font-face {
+  font-family: "gotham-bold";
+  src: url('../fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+  font-family: "gotham-medium";
+  src: url('../fonts/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: "gotham-book";
+  src: url('../fonts/Gotham-Book.otf');
+}
+
+.gotham-bold{
+  font-family: "gotham-bold", serif;
+}
+
+.gotham-medium {
+  font-family: "gotham-medium", serif;
+}
+
+.gotham-book {
+  font-family: "gotham-book", serif;
+}
+
 .ng-scope {
   height: 100%;
 }
@@ -149,7 +178,7 @@ hr {
 }
 
 .header .navbar-default .navbar-nav > li > a:hover {
-  color: #a4cd33;
+  /*color: #a4cd33;*/
   border-top: 5px solid #a4cd33;
   transition: all 0.4s ease;
   padding-top: 10px;
@@ -281,6 +310,18 @@ hr {
   vertical-align: middle;
 }
 
+.content-white {
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 8em;
+  padding: 3em 5em 3em 20em;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
 .content header {
   display: inline-block;
   vertical-align: middle;
@@ -375,6 +416,7 @@ hr {
   background: #a4cd33;
   color: #ffffff;
   border-color: #ABD635;
+  font-size: 1em;
   /*margin: 50px 0 50px 0;*/
   /*margin-top: 3em;*/
   /*margin-bottom: 1em;*/
@@ -668,8 +710,43 @@ hr {
 #footer {
   /*background: #272833;*/
   background: #000000;
-  padding: 6em 0;
+  min-height: 50vh;
+  /*text-align: center;*/
+  color: #fff;
+}
+
+#footer-container {
+  padding: 3em;
+}
+
+#footer-container h6 > a:hover {
+  color: #a4cd33;
+  text-decoration: none;
+}
+
+#footer-container ul {
   text-align: center;
+  list-style-type: none;
+  margin-left: 1em;
+}
+
+#footer-container ul > li {
+  float: left;
+}
+
+#footer-container ul > li > a:hover {
+  color: #a4cd33;
+  text-decoration: none;
+}
+
+#footer-container ul > li > h6 > a:hover {
+  color: #a4cd33;
+  text-decoration: none;
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 2em;
 }
 
 #footer .icons .icon.alt {
@@ -716,6 +793,13 @@ hr {
 
 #footer .copyright li a {
   color: inherit;
+}
+
+#footer .icons {
+  margin: 0 auto;
+  display: table;
+  padding-left: 0 !important;
+  padding-top: 2em;
 }
 
 #footer .icons li {

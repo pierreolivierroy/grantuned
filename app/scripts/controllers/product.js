@@ -47,11 +47,11 @@ angular.module('grantunedApp')
       //Series object (optional) - a list of series using normal highcharts series options.
       series: [{
         name: 'Avant',
-        data: [4690, 521, 3845],
+        data: [4690, 521, 6282],
         color: '#DBDBDB'
       }, {
         name: 'Après',
-        data: [630, 444, 6282],
+        data: [630, 444, 3845],
         color: '#a4cd33'
       }],
       //Title configuration (optional)
